@@ -14,9 +14,10 @@ header nav ul li{
 }
 
 header{
-    padding-left: 50%;
-    text-align:center;
+
+    margin-left: 60%;
     font-size: 1rem;
+    color: rgb(54,135,253);
 }
 
 .portada img{
@@ -245,9 +246,6 @@ footer{
 .tarjetas{
     display:flex;
     flex-wrap: wrap;
-    margin-left: 20%;
-    gap: 10%;
-    margin-right: 20%;
     margin-bottom: 2%;
     margin-top: 2%;
 
@@ -262,7 +260,6 @@ footer{
     margin-left: 40px;
     margin-top: 40px;
     text-align: center;
-
 }
 
 .card-img {
@@ -292,28 +289,132 @@ h4{
     color: black;
 }
 
-
+/*MEDIA QUERIES*/
 @media screen and (max-width: 480px){
 
-
-.portada-1{
-    display: none;
-}
-.portada-3{
-    display: none;
+    .portada{
+display: none;
 }
 
-.portada-2{
+.indexfooter{
+    display: none;
+    }
+
+.index {
+    background-image: url('../img/portada2.jpg');
+    background-size: cover; 
+    background-repeat:no-repeat;
+}
+body, html {
     height: 100%;
+    margin: 0;
 }
-.texto{
-    display: none;
+body::before {
+    content: 'TRAVEL';
+    position: absolute;
+    top: 0%;
+    left: 3%;
+    color: #070707; 
+    font-size: 35px; 
 }
+
 .nav{
-    display: inline-flex;
-text-align: center;
+margin-left: 70%;
 }
+
+
+.card {
+padding: 0%;
+margin-left: 4%;
+margin-bottom: 5%;
 }
+
+
+.galeriafooter{
+    margin-top: 25%;
+}
+.galeria-contenedor{
+    margin: 2%;
+    grid-gap: 2px;
+}
+
+.destinos{
+    font-size:small;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align:center;
+}
+
+.texto1{
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: small;
+    text-align:left;
+}
+
+.destinos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 140px 140px ;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-areas:
+    "texto1 texto1 texto1"
+    "texto1 texto1 texto1"
+    "texto1 texto1 texto1"
+    "img1 img2 img3"
+    " img4 img5 img6";
+}
+
+.tailandia{
+    text-align: center;
+    margin: 0%;
+    text-decoration:underline;
+    margin-top: 5%;
+}
+
+.contacto{
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+.iconos{
+
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    gap: 10%;
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
+
+}
+
+.icono-contacto-tarjeta{
+    margin-top: 8%;
+}
+.iconos p{
+    margin-right: 0%;
+}
+
+.linea{
+    background-color: rgb(61, 60, 60);
+    padding: 1px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+
+}
+
+
 
 @media screen and (max-width: 768px){
     .portada-1{
@@ -322,7 +423,6 @@ text-align: center;
     .portada-3{
         display: none;
     }
-
     .nav {
     display: inline-block;
     font-size: small;
