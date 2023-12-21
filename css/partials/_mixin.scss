@@ -1,0 +1,9 @@
+@mixin tamanos($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin margin($top, $left){
+    margin-top: $top;
+    margin-left: $left;
+}

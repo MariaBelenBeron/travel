@@ -3,7 +3,6 @@
 header{
     margin-left: 60%;
     font-size: 1rem;
-    color: rgb(54,135,253);
 
     nav ul li{
         display: inline-flex;
@@ -56,10 +55,4 @@ header{
 }
 
 
-    /*MIXIN*/
-
-@mixin tamanos($ancho, $alto){
-    width: $ancho;
-    height: $alto;
-}
 

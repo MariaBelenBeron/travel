@@ -10,8 +10,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 140px 140px ;
-    margin-top: 1%;
-    margin-left: 5%;
+    @include margin(1%, 5%);
     margin-right: 5%;
     grid-template-areas:
     "texto1 texto1 texto1 texto1 img1 img2 img3"
