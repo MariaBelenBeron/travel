@@ -1,0 +1,35 @@
+.contacto{
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+
+
+    }
+
+.icono-contacto-tarjeta{
+    margin-top: 5%;
+}
+
+.linea{
+    background-color: black;
+    padding: 0.1px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.iconos{
+    display:flex;
+    align-items: center;
+    margin-left: 30%;
+    gap: 6%;
+
+    p{
+        color: grey;
+        font-size: small;
+        text-align:center;
+        margin-right: 30%;
+    }
+}

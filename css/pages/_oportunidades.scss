@@ -1,0 +1,48 @@
+.tarjetas{
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+    .card {
+        width: 45vh;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+        font-size: small;
+        margin-left: 40px;
+        margin-top: 40px;
+        text-align: center;
+
+        .card-img {
+            width: 40vh;
+            height:40vh;
+            object-fit:cover;
+            margin-top: 2%;
+        }
+
+        .card-content{
+            margin: 5%;
+        }
+
+        .linea1{
+            background-color: black;
+            padding: 0.1px;
+            margin-top: 2%;
+            margin-bottom: 1%;
+        }
+        
+        .calendario{
+            margin-top: 5%;
+            display:inline-block;
+        }
+        
+        h4{
+            color: black;
+        }
+    }
+}
+
+
+
+
