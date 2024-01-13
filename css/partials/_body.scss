@@ -1,15 +1,24 @@
     /*HEADER*/
 
+    .index{
+        background-color: whitesmoke;
+    }
+
 header{
-    margin-left: 60%;
-    font-size: 1rem;
+    margin-left: 50%;
+    font-size: 1.1rem;
+    font-family: $second-font-family;
+    padding-right: 50%;
+
 
     nav ul li{
         display: inline-flex;
         padding-right: 20px;
         padding-top: 5%;
+        
     }
 }
+
 
 .portada{
     padding-left: 10%;
@@ -17,6 +26,8 @@ header{
     padding-top:5%;
     display:inline-flex;
     text-align:center;
+    font-family: $second-font-family;
+    background-color: whitesmoke;
 
     img{
         height: 60vh;
@@ -28,31 +39,50 @@ header{
 
     .texto{
         display: inline-flex;
-        padding-top: 120px ;
-        padding-left:5%;
-        padding-right: 5%;
-        font-size: 3rem;
-        border: none;
+        margin-top: 15% ;
+        margin-left:10%;
+        padding-right: 10%;
         color: rgb(8, 7, 7);
-        opacity: 0.6;
-        transition: 0.3s;
-        -webkit-animation:slide-fwd-center .45s cubic-bezier(.25,.46,.45,.94) both;
-        animation:slide-fwd-center .45s cubic-bezier(.25,.46,.45,.94) both
+
+        h1{
+            font-size: 5rem;
+            animation:tracking-in-contract 2s cubic-bezier(.445,.05,.55,.95) backwards;
+            animation-delay: 1s;
+            
+        }
+
+
+
     }
-    
-    
-    .texto:hover {opacity: 1}
-
-
     /*FOOTER*/
 
     footer{
     padding: 1%;
     background-color: $mainColor ;
     text-align: center;
+
     font-size: small;
     margin-top: 7%;
+
+    p{
+        background-color: $mainColor ;
+        text-align: center;
+    }
+}
+
+.iconos{
+    display:inline-flex;
+    align-items: center;
+    text-align: center;
+    gap: 30%;
+    background-color: $mainColor ;
+    margin-right: 10%;
 }
 
 
+.indexfooter{
+    display: none;
+}
 
+
+ @keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}

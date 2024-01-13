@@ -16,7 +16,7 @@
         background-repeat:no-repeat;
     }
     body, html {
-        height: 40%;
+        height: 100%;
         margin: 0;
     }
     body::before {
@@ -26,11 +26,24 @@
         left: 3%;
         color: #070707; 
         font-size: 40px; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        animation:tracking-in-contract 2s cubic-bezier(.445,.05,.55,.95) backwards;
+        animation-delay: 1s;
     }
+        header{
+            padding: 0%;
+            background-color: transparent;
+        }
     
-    .nav{
-    margin-left: 70%;
-    }
+    
+        
+        .nav{
+            margin-left: 70%;
+            padding: 0%;
+            background-color: transparent;
+        }
+
+
     
     
     .texto1{
@@ -121,11 +134,7 @@
         .portada{
     display: none;
     }
-    
-    .indexfooter{
-        display: none;
-        }
-    
+
     .index {
         background-image: url('../img/portada2.jpg');
         background-size: cover; 
@@ -133,21 +142,36 @@
     }
     body, html {
         height: 100%;
-        margin: 0;
+        margin: 0%;
+        padding: 0%;
+
     }
-    body::before {
-        content: 'TRAVEL';
-        position: absolute;
-        top: 0%;
-        left: 3%;
-        color: #070707; 
-        font-size: 35px; 
+    .index::before {  
+    text-align: center;
+        top: 40%;
+        left: 0%;
+        right: 0%;
+        color: white; 
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        animation:tracking-in-contract 2s cubic-bezier(.445,.05,.55,.95) backwards;
+        animation-delay: 1s;
     }
+    header{
+        padding: 0%;
+        background-color: transparent;
+    }
+
     
     .nav{
-    margin-left: 70%;
+        margin: 0%;
+        padding: 0%;
+        background-color: transparent;
     }
-    
+
+    .texto{
+        color: rgb(8, 7, 7);
+        font-family: $second-font-family;}
     
     .card {
     padding: 0%;
@@ -203,36 +227,43 @@
     }
     
     .contacto{
-        margin-top: 10%;
-        margin-left: 2%;
-        margin-right: 2%;
-        text-align: center;
-    }
-    
-    .iconos{
-        display:flex;
-        flex-wrap: wrap;
-        margin-left: 10%;
-        gap: 10%;
         margin-top: 5%;
-        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
         text-align: center;
-    }
+        color:gray;
+        font-family: $second-font-family;
+        }
     
-    .icono-contacto-tarjeta{
-        margin-top: 8%;
-    }
-    .iconos p{
-        margin-right: 0%;
-    }
+
     
     .linea{
-        background-color: rgb(61, 60, 60);
-        padding: 1px;
+        background-color: grey;
+        padding: 0.1px;
         margin-left: 3%;
         margin-right: 3%;
         margin-top: 2%;
-        margin-bottom: 1%;
+        margin-bottom: 4%;
+    }
+    .boton{
+        border-radius: 10%;
+        margin-top: 5%;
+        align-items: center;
+        padding: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-left: 40%;
+        font-size: small;
+        border-color: grey;
+    }
+
+    .iconos{
+        display:inline-flex;
+        align-items: center;
+        text-align: center;
+        gap: 0%;
+        margin-bottom: 2%;
+
     }
     
     }

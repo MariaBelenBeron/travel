@@ -2,16 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
   color: rgb(168, 168, 168);
+  background-color: whitesmoke;
 }
 
 /*HEADER*/
+.index {
+  background-color: whitesmoke;
+}
+
 header {
-  margin-left: 60%;
-  font-size: 1rem;
-  color: rgb(54, 135, 253);
+  margin-left: 50%;
+  font-size: 1.1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-right: 50%;
 }
 header nav ul li {
   display: inline-flex;
@@ -25,6 +30,8 @@ header nav ul li {
   padding-top: 5%;
   display: inline-flex;
   text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: whitesmoke;
 }
 .portada img {
   height: 60vh;
@@ -35,19 +42,15 @@ header nav ul li {
 
 .texto {
   display: inline-flex;
-  padding-top: 120px;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-size: 3rem;
-  border: none;
+  margin-top: 15%;
+  margin-left: 10%;
+  padding-right: 10%;
   color: rgb(8, 7, 7);
-  opacity: 0.6;
-  transition: 0.3s;
-  animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
-.texto:hover {
-  opacity: 1;
+.texto h1 {
+  font-size: 5rem;
+  animation: tracking-in-contract 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards;
+  animation-delay: 1s;
 }
 
 /*FOOTER*/
@@ -58,43 +61,74 @@ footer {
   font-size: small;
   margin-top: 7%;
 }
-
-/*MIXIN*/
-.contacto {
-  margin-top: 10%;
-  margin-left: 30%;
-  margin-right: 30%;
+footer p {
+  background-color: #7dece3;
   text-align: center;
-}
-
-.icono-contacto-tarjeta {
-  margin-top: 5%;
-}
-
-.linea {
-  background-color: black;
-  padding: 0.1px;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 2%;
-  margin-bottom: 1%;
 }
 
 .iconos {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  margin-left: 30%;
-  gap: 6%;
-}
-.iconos p {
-  color: grey;
-  font-size: small;
   text-align: center;
+  gap: 30%;
+  background-color: #7dece3;
+  margin-right: 10%;
+}
+
+.indexfooter {
+  display: none;
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+.contacto {
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  color: gray;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.linea {
+  background-color: rgb(139, 146, 144);
+  padding: 0.1px;
+  margin-left: 30%;
   margin-right: 30%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.bodycontacto {
+  background-color: whitesmoke;
+}
+
+.boton {
+  border-radius: 10%;
+  margin-top: 5%;
+  align-items: center;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 40%;
+  font-size: small;
+  border-color: grey;
 }
 
 .destinos-principal {
   color: gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .tailandia {
@@ -104,6 +138,7 @@ footer {
 }
 
 .destinos {
+  background-color: whitesmoke;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 140px 140px;
@@ -121,26 +156,37 @@ footer {
 
 .img1 {
   grid-area: img1;
+  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .img2 {
   grid-area: img2;
+  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1s;
 }
 
 .img3 {
   grid-area: img3;
+  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 2s;
 }
 
 .img4 {
   grid-area: img4;
+  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 3s;
 }
 
 .img5 {
   grid-area: img5;
+  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 4s;
 }
 
 .img6 {
   grid-area: img6;
+  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 5s;
 }
 
 .texto1 {
@@ -151,8 +197,33 @@ footer {
   text-align: center;
   padding: 0%;
   font-size: 14px;
+  animation: slide-in-left 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.bodydestino {
+  background-color: whitesmoke;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .galeria-contenedor {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -188,11 +259,18 @@ footer {
   grid-column-start: span 2;
 }
 
+.bodygaleria {
+  background-color: whitesmoke;
+}
+
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2%;
   margin-top: 2%;
+}
+.tarjetas .titulo-tarjeta {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .tarjetas .card {
   width: 45vh;
@@ -200,32 +278,40 @@ footer {
   border-radius: 5px;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
   font-size: small;
-  margin-left: 40px;
   margin-top: 40px;
+  margin-left: 40px;
   text-align: center;
+  background-color: whitesmoke;
 }
-.tarjetas .card .card-img {
+.tarjetas .card-img {
   width: 40vh;
   height: 40vh;
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: 2%;
 }
-.tarjetas .card .card-content {
+.tarjetas .card-content {
   margin: 5%;
 }
-.tarjetas .card .linea1 {
-  background-color: black;
+.tarjetas .linea1 {
+  background-color: gray;
   padding: 0.1px;
   margin-top: 2%;
   margin-bottom: 1%;
 }
-.tarjetas .card .calendario {
+.tarjetas .calendario {
   margin-top: 5%;
   display: inline-block;
 }
-.tarjetas .card h4 {
-  color: black;
+.tarjetas .dias {
+  font-size: medium;
+  padding-top: 2%;
+  font-family: "Times New Roman", Times, serif;
+  color: grey;
+}
+
+.bodyoportunidades {
+  background-color: whitesmoke;
 }
 
 /*MEDIA QUERIES TABLET*/
@@ -242,7 +328,7 @@ footer {
     background-repeat: no-repeat;
   }
   body, html {
-    height: 40%;
+    height: 100%;
     margin: 0;
   }
   body::before {
@@ -252,9 +338,18 @@ footer {
     left: 3%;
     color: #070707;
     font-size: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    animation: tracking-in-contract 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards;
+    animation-delay: 1s;
+  }
+  header {
+    padding: 0%;
+    background-color: transparent;
   }
   .nav {
     margin-left: 70%;
+    padding: 0%;
+    background-color: transparent;
   }
   .texto1 {
     margin-bottom: 5%;
@@ -326,9 +421,6 @@ footer {
   .portada {
     display: none;
   }
-  .indexfooter {
-    display: none;
-  }
   .index {
     background-image: url("../img/portada2.jpg");
     background-size: cover;
@@ -336,18 +428,32 @@ footer {
   }
   body, html {
     height: 100%;
-    margin: 0;
+    margin: 0%;
+    padding: 0%;
   }
-  body::before {
-    content: "TRAVEL";
-    position: absolute;
-    top: 0%;
-    left: 3%;
-    color: #070707;
-    font-size: 35px;
+  .index::before {
+    text-align: center;
+    top: 40%;
+    left: 0%;
+    right: 0%;
+    color: white;
+    font-size: 50px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    animation: tracking-in-contract 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards;
+    animation-delay: 1s;
+  }
+  header {
+    padding: 0%;
+    background-color: transparent;
   }
   .nav {
-    margin-left: 70%;
+    margin: 0%;
+    padding: 0%;
+    background-color: transparent;
+  }
+  .texto {
+    color: rgb(8, 7, 7);
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
   .card {
     padding: 0%;
@@ -391,32 +497,37 @@ footer {
     margin-top: 5%;
   }
   .contacto {
-    margin-top: 10%;
-    margin-left: 2%;
-    margin-right: 2%;
-    text-align: center;
-  }
-  .iconos {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10%;
-    gap: 10%;
     margin-top: 5%;
-    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
-  }
-  .icono-contacto-tarjeta {
-    margin-top: 8%;
-  }
-  .iconos p {
-    margin-right: 0%;
+    color: gray;
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
   .linea {
-    background-color: rgb(61, 60, 60);
-    padding: 1px;
+    background-color: grey;
+    padding: 0.1px;
     margin-left: 3%;
     margin-right: 3%;
     margin-top: 2%;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
+  }
+  .boton {
+    border-radius: 10%;
+    margin-top: 5%;
+    align-items: center;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 40%;
+    font-size: small;
+    border-color: grey;
+  }
+  .iconos {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    gap: 0%;
+    margin-bottom: 2%;
   }
 }/*# sourceMappingURL=estilo.css.map */

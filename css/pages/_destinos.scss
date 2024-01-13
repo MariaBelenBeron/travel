@@ -1,16 +1,20 @@
 .destinos-principal{
     color: gray;
+    font-family: $fontfamily;
 }
+
+
 .tailandia{
     font-size:large;
     margin-left: 25%;
     margin-top: 5%;
 }
 .destinos{
+    background-color: whitesmoke;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 140px 140px ;
-    @include margin(1%, 5%);
+    grid-template-rows: 140px 140px;
+    @include margin (1%, 5%);
     margin-right: 5%;
     grid-template-areas:
     "texto1 texto1 texto1 texto1 img1 img2 img3"
@@ -24,26 +28,37 @@
 
     .img1{
     grid-area: img1;
+    animation:scale-in-center 1s cubic-bezier(.25,.46,.45,.94) both;
 }
 
 .img2{
     grid-area: img2;
+    animation:scale-in-center 1s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 1s;
 }
 
 .img3{
     grid-area: img3;
+    animation:scale-in-center 1s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 2s;
 }
 
 .img4{
     grid-area: img4;
+    animation:scale-in-center 1s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 3s;
 }
 
 .img5{
     grid-area: img5;
+    animation:scale-in-center 1s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 4s;
 }
 
 .img6{
     grid-area: img6;
+    animation:scale-in-center 1s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 5s;
 }
 
 .texto1{
@@ -54,6 +69,12 @@
     text-align: center;
     padding: 0%;
     font-size: 14px;
+    animation:slide-in-left 4s cubic-bezier(.25,.46,.45,.94) both;
 }
 
+.bodydestino{
+    background-color: whitesmoke;
+}
 
+@keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}

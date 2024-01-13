@@ -4,6 +4,11 @@
     margin-bottom: 2%;
     margin-top: 2%;
 
+
+    .titulo-tarjeta{
+        font-family: $second-font-family;
+    }
+
     .card {
         width: 45vh;
         border: 1px solid #ccc;
@@ -12,6 +17,8 @@
         font-size: small;
         @include margin(40px, 40px);
         text-align: center;
+        background-color: whitesmoke;
+}
 
         .card-img {
             width: 40vh;
@@ -25,7 +32,7 @@
         }
 
         .linea1{
-            background-color: black;
+            background-color: gray;
             padding: 0.1px;
             margin-top: 2%;
             margin-bottom: 1%;
@@ -35,13 +42,19 @@
             margin-top: 5%;
             display:inline-block;
         }
-        
-        h4{
-            color: black;
+
+        .dias{
+            font-size: medium;
+            padding-top: 2%;
+            font-family:'Times New Roman', Times, serif;
+            color: grey;
         }
     }
-}
 
+
+.bodyoportunidades{
+    background-color: whitesmoke;
+}
 
 
 
